@@ -21,3 +21,7 @@ export interface EstadoUsuario {
     idEstadoUsuarios: number;
     nombreEstado:     string;
 }
+
+export interface FotoUsuario{
+    nombreFotoUsuario: String;
+}

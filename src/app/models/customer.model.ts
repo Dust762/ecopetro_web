@@ -1,5 +1,6 @@
 import { EstadoUsuario } from "./estadoUsuario.model";
 import { FkTipoUsuario } from "./fkTipoUsuario.model";
+import { fotoUsuario } from "./fotoUsuario";
 
 export class Customer{
   nombreUsuario   : string;
@@ -10,6 +11,7 @@ export class Customer{
   fechaCreacion?  : string;
   FKTipoUsuario?  : FkTipoUsuario;
   estadoUsuario?  : EstadoUsuario;
+  usuarioFoto?   : fotoUsuario;
   constructor(customer){
     this.idUsuario      = customer.idUsuario;
     this.nombreUsuario  = customer.nombreUsuario;
@@ -19,6 +21,7 @@ export class Customer{
     this.telefono       = customer.telefono;
     this.FKTipoUsuario  = customer.FKTipoUsuario;
     this.estadoUsuario  = customer.estadoUsuario;
+    this.usuarioFoto = customer.fotoUsuario;
   }
 }
 // get name(){
