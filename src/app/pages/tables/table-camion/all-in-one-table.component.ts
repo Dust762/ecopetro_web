@@ -74,7 +74,6 @@ export class AllInOneTableComponent implements OnInit, AfterViewInit {
     getData() {
       this.camionesService.getTruck().subscribe(trucks => {
         this.trucks = trucks;
-        console.log(trucks);
         this.dataSource.data = trucks;
       });
     }

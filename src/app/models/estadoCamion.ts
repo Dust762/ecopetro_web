@@ -1,7 +1,8 @@
-export class EstadoCamion{
-
-    constructor(public idEstadoCamion: number, public nombreEstadoCamion: string) {}
-    public get getNombreEstadoCamion(){
-        return this.nombreEstadoCamion;
+export class EstadoCamion {
+    idEstadoCamion      : number;
+    nombreEstadoCamion  : string;
+    constructor(estadoCamion){
+        this.idEstadoCamion     = estadoCamion.idEstadoCamion;
+        this.nombreEstadoCamion = estadoCamion.nombreEstadoCamion;
     }
-  }
+}
